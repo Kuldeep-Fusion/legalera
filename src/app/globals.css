@@ -95,6 +95,7 @@ html {
 .ad-swiper-dark .swiper-pagination-bullet {
   background: #ffffff;
 }
+
 .ad-swiper-dark .swiper-pagination-bullet-active {
   background: #5cc4f2;
 }
@@ -102,10 +103,15 @@ html {
 .ad-swiper-light .swiper-pagination-bullet {
   background: #183e63;
 }
+
 .ad-swiper-light .swiper-pagination-bullet-active {
   background: #d02028;
 }
 
 body {
   background-color: #F2F0EF;
+}
+
+.nl-wrap {
+  display: none !important;
 }
