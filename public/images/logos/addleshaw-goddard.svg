@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 68" fill="none">
+  <rect x="6" y="12" width="42" height="44" rx="4" stroke="#183E63" stroke-width="3" fill="#F8FAFC"/>
+  <path d="M17 44L27 20l10 24h-4.6l-2-5.2h-6.8l-2 5.2H17Zm7.6-8.8h4.8L27 28.5l-2.4 6.7Z" fill="#183E63"/>
+  <text x="58" y="32" font-family="Arial, sans-serif" font-size="14.5" font-weight="800" fill="#0C233B" letter-spacing="1">ADDLESHAW</text>
+  <text x="58" y="49" font-family="Arial, sans-serif" font-size="14.5" font-weight="600" fill="#006CA3" letter-spacing="1.4">GODDARD</text>
+</svg>

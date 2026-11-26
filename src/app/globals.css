@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================================
+   CONTAINER WIDTH & MODERN PHOTO FRAME HELPERS
+   - Mobile & Tablet: Full width (100%) with side padding
+   - Laptop & Desktop (1024px+): 70% width centered
+   ============================================================================ */
+@layer components {
+  .site-container {
+    @apply w-full lg:w-[70%] mx-auto px-4 md:px-6 lg:px-2;
+  }
+
+  .img-hero {
+    @apply rounded-xl overflow-hidden bg-surface-container ring-1 ring-black/5 shadow-sm;
+  }
+
+  .img-card {
+    @apply rounded-lg overflow-hidden bg-surface-container ring-1 ring-black/5;
+  }
+
+  .img-thumb {
+    @apply rounded-lg overflow-hidden bg-surface-container ring-1 ring-black/5;
+  }
+
+  .img-dark {
+    @apply rounded-xl overflow-hidden bg-secondary ring-1 ring-white/15;
+  }
+
+  /* Keeps infinite-scroll articles fast by skipping offscreen layout/paint */
+  .article-perf {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 950px;
+  }
+}
+
+/* Smooth Breaking News ticker animation */
+@keyframes ticker-scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.ticker-track {
+  display: flex;
+  width: max-content;
+  animation: ticker-scroll 42s linear infinite;
+}
+
+.ticker-track:hover {
+  animation-play-state: paused;
+}
+
+/* Hide scrollbars on horizontal nav while keeping smooth touch scrolling */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ============================================================================
+   SWIPER AD SCROLLER INNER PAGINATION DOTS
+   ============================================================================ */
+.ad-swiper .swiper-pagination {
+  bottom: 7px !important;
+  line-height: 1;
+}
+
+.ad-swiper .swiper-pagination-bullet {
+  width: 6px;
+  height: 6px;
+  opacity: 0.45;
+  transition: all 200ms ease;
+  margin: 0 3px !important;
+}
+
+.ad-swiper .swiper-pagination-bullet-active {
+  width: 18px;
+  border-radius: 9999px;
+  opacity: 1;
+}
+
+.ad-swiper-dark .swiper-pagination-bullet {
+  background: #ffffff;
+}
+.ad-swiper-dark .swiper-pagination-bullet-active {
+  background: #5cc4f2;
+}
+
+.ad-swiper-light .swiper-pagination-bullet {
+  background: #183e63;
+}
+.ad-swiper-light .swiper-pagination-bullet-active {
+  background: #d02028;
+}
+
+body {
+  background-color: #F2F0EF;
+}
