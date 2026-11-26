@@ -11,9 +11,17 @@ import "swiper/css";
 import "swiper/css/pagination";
 import AdMarkBadge from "@/components/ad/AdMarkBadge";
 
-export default function AdLeaderboardCard({ slides, isDarkBanner = false }) {
+export default function AdLeaderboardCard({
+  slides,
+  isDarkBanner = false,
+  hideOnMobile = false,
+}) {
   return (
-    <div className="border-b border-outline-variant/60 bg-surface-container-low/40">
+    <div
+      className={`${
+        hideOnMobile ? "hidden md:block " : ""
+      }border-b border-outline-variant/60 bg-surface-container-low/40`}
+    >
       <div className="site-container py-5">
         <div
           className={`relative overflow-hidden rounded-xl border shadow-sm ${

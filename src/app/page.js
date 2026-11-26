@@ -58,8 +58,8 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* 1C. Top Leaderboard Dummy Ad (970x90) */}
-      <AdBanner slot="topLeaderboard" variant="leaderboard" />
+      {/* 1C. Top Leaderboard Dummy Ad (970x90, hidden on mobile) */}
+      <AdBanner slot="topLeaderboard" variant="leaderboard" hideOnMobile />
 
       {/* 2. 3-COLUMN HERO EDITORIAL GRID */}
       <HeroEditorialGrid />
